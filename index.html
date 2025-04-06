@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyRight</title>
+    <style>
+        body {
+            display: flex;
+            background-color: black;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            background-color: black;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            padding: 20px;
+            gap: 20px;
+            border: 1px solid rgb(52, 52, 52);
+            border-radius: 20px;
+            max-width: 90%;
+        }
+        .main {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: left;
+        }
+        .contact {
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+        .fly {
+            color: white;
+        }
+        .right {
+            color: rgb(0, 157, 255);
+        }
+        .logo {
+            border-radius: 10px;
+            max-width: 220px;
+            width: 100%;
+        }
+        .subtitle {
+            color: gray;
+            font-family: Arial, sans-serif;
+            font-size: 1rem;
+        }
+        .testflightimg {
+            border: 1px solid rgb(52, 52, 52);
+            border-radius: 10px;
+            max-width: 160px;
+            width: 100%;
+        }
+        a {
+            color: rgb(0, 157, 255);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .flyright {
+                font-size: 1.8rem;
+            }
+            .subtitle {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="images/FlyRight.png" class="logo">
+        <div class="main">
+            <div class="contact">Contact</div>
+            <div class="subtitle">For support or feedback send an email at</div>
+            <a href="mailto:wetcementstudios@gmail.com" class="subtitle">wetcementstudios@gmail.com</a>
+        </div>
+    </div>
+</body>
+</html>
