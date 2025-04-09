@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlyRight</title>
+    <title>FlyRight Support</title>
     <style>
         body {
             display: flex;
@@ -11,7 +11,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
             padding: 20px;
         }
@@ -70,6 +70,32 @@
             text-decoration: underline;
         }
 
+        .second {
+            display: flex;
+            background-color: black;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            gap: 20px;
+            border: 1px solid rgb(52, 52, 52);
+            border-radius: 20px;
+            margin-top: 2%;  /* Decrease margin-top */
+        }
+
+        .second .main {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: center; /* Center the text */
+            align-items: center; /* Ensure everything is centered horizontally */
+            justify-content: center; /* Vertically center if needed */
+        }
+
+        .break {
+            margin-top: 5%;
+        }
+
         /* Mobile Styles */
         @media (max-width: 768px) {
             .container {
@@ -83,6 +109,12 @@
                 font-size: 0.9rem;
             }
         }
+
+        @media (min-width: 1000px) {
+            .second {
+                max-width: 30%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -92,6 +124,46 @@
             <div class="contact">Contact</div>
             <div class="subtitle">For support, questions, or feedback send an email to</div>
             <a href="mailto:wetcementstudios@gmail.com" class="subtitle">wetcementstudios@gmail.com</a>
+        </div>
+    </div>
+    <div class="second">
+        <div class="main">
+            <img width="60%" src="images/1.PNG"/>
+            <div class="subtitle">FlyRight is the best flight simulator companion app.</div>
+            <div class="break"/>
+            <img width="60%" src="images/2.PNG"/>
+            <div class="subtitle">Go to the logbook page to create and view your logs.</div>
+            <div class="subtitle">Press the plus icon in the top right to create a log</div>
+            <div class="break"/>
+            <img width="60%" src="images/3.PNG"/>
+            <div class="subtitle">On the create log page, you can fill out the title, departure and arrival airports, set the date, the duration, and right a comment. Press the calendar to get a date picker.</div>
+            <div class="break"/>
+            <img width="60%" src="images/4.PNG"/>
+            <div class="subtitle">Once you create a log, you can select it from the logbook page to view it.</div>
+            <div class="break"/>
+            <img width="60%" src="images/5.PNG"/>
+            <div class="subtitle">Go to the checklist page to create, view, and interact with your checklists.</div>
+            <div class="subtitle">Press the plus icon in the top right to create a checklist</div>
+            <div class="break"/>
+            <img width="60%" src="images/6.PNG"/>
+            <div class="subtitle">On the create checklist page, you can fill out the title, choose the checklist colour, and add infinite items.</div>
+            <div class="break"/>
+            <img width="60%" src="images/7.PNG"/>
+            <div class="subtitle">Press on the palette to open the colour picker.</div>
+            <div class="break"/>
+            <img width="60%" src="images/8.PNG"/>
+            <div class="subtitle">Once you create a checklist, you can select it from the checklists page to view, and interact with it.</div>
+            <div class="break"/>
+            <img width="60%" src="images/9.PNG"/>
+            <div class="subtitle">You can easily press on an item to tick it off, and its ticked or unticked state is saved, even when you exit the checklist or close the app, until you clear the checklist.</div>
+            <div class="break"/>
+            <img width="60%" src="images/10.PNG"/>
+            <div class="subtitle">On the convert page, you can easily convert between commonly used aviation units.</div>
+            <div class="break"/>
+            <img width="60%" src="images/11.PNG"/>
+            <div class="subtitle">Press on the arrows to change the conversion direction.</div>
+            <div class="break"/>
+            <div class="subtitle">For any questions or issues, send an email to <a href="mailto:wetcementstudios@gmail.com" class="subtitle">wetcementstudios@gmail.com</a></div>
         </div>
     </div>
 </body>
